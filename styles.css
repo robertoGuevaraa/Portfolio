@@ -242,6 +242,17 @@ li{
     margin: 10px;
 }
 
+.contacto{
+    background-color: #202020;
+    color: #EBEBEB;
+    height: 700px;
+    padding: 50px 20px;
+    margin: auto;
+    display: flex;
+}
+
+
+
 /* @keyframes cursor {
     to{
         border-left: 2px solid #202020;
