@@ -1,0 +1,105 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body.active nav{
+    background-color: aliceblue;
+}
+.switch{
+    display: list-item;
+    top: 15px;
+    right: 10px;
+    margin: 10px;
+    padding: auto;
+    cursor: pointer;
+}
+
+ion-icon {
+    font-size: 24px;
+  }
+
+
+/* .animated-text{
+    font-size: 18px;
+    font-weight: normal;                ********C O D I G O  P A R A  A N I M A C I O N  D E  T E X T O **********
+    min-width: 200px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: 'Ingeniero en Sistemas y Computación';
+    color: #EBEBEB;
+    animation: words 20s infinite;
+} */
+
+/* .animated-text span::after{
+    content: '';
+    background-color: #202020;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px solid;
+    right: -8px;
+    animation: cursor .6s infinite, typing 20s steps(14) infinite;
+} */
+
+
+/* contacto */
+/* .contacto{
+    background: #202020;
+    background-size: cover;
+    height: 100vh;
+    color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto .contenido h2{
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 40px;
+    font-size: 35px;
+}
+.contacto .contenido .redes a{
+    color: #EBEBEB;
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 5px;
+}
+
+.contacto .contenido .redes a:hover{
+    color: #778da9;
+} */
+
+
+
+/* @keyframes cursor {
+    to{
+        border-left: 2px solid #202020;
+    }
+}
+
+@keyframes words {
+    0%, 20%{
+        content: 'Ingeniero en Sistemas y Computación';                     ********C O D I G O  P A R A  A N I M A C I O N  D E  T E X T O **********
+    }
+    21%, 40%{
+        content: 'Desarrollador';
+    }    
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 8px);
+    }
+} */

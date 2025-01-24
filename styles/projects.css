@@ -1,0 +1,92 @@
+.proyectos{
+    background-color: #202020;
+}
+
+.proyectos h2{
+    font-size: 48px;
+    text-align: left;
+    margin-left: 16%;
+    padding: 20px 0;
+    color: #EBEBEB;
+}
+.contenedor{
+    padding: 50px 0;
+}
+
+.wrapper{
+    padding: 10px 10%;
+}
+
+.card-area{
+    display: grid;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 50px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.cards{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.cards img{
+    height: 350px;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    overlay: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(transparent, #778da9 60%);
+    padding: 0 50px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.overlay h3{
+    margin-top: 55%;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.overlay a{
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #EBEBEB;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.cards:hover img{
+    transform: scale(1.1);
+}
+
+.cards:hover .overlay{
+    height: 100%;
+}
+
+.overlay .icon{
+    margin: 10px;
+}

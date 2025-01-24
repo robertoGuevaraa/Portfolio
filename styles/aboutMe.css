@@ -1,0 +1,24 @@
+.sobreMi{
+    background-color: #202020 ;
+    color: #EBEBEB;
+    height: 450px;
+    padding: 50px 20px;
+    margin: auto;
+}
+
+.sobreMi .contenido{
+    max-width: 1310px; 
+    margin: auto;
+}
+
+.sobreMi .contenido h2{
+    font-size: 48px;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.sobreMi .contenido p{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}

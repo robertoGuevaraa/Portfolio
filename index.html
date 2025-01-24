@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/aboutMe.css">
+    <link rel="stylesheet" href="/styles/skills.css">
+    <link rel="stylesheet" href="/styles/projects.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <!--  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Portafolio</title>
@@ -23,13 +30,13 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre mí</a>
+              <a class="nav-link" href="#sobreMi">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Habilidades</a>
+              <a class="nav-link" href="#skills">Habilidades</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
           </ul>
         </div>
@@ -37,7 +44,7 @@
     </nav>
 
     <!-- inicio -->
-    <section class="inicio">
+    <section class="inicio" id="inicio">
       <div class="contenido">
         <h1 class="nombre">Roberto Guevara</h1>
 
@@ -53,7 +60,7 @@
     </section>
 
     <!-- sobre mi -->
-    <section class="sobreMi">
+    <section class="sobreMi" id="sobreMi">
       <div class="contenido">
         <h2>Sobre Mí</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illum beatae, fugit vero id cum. Odio pariatur eius excepturi, ullam tempora delectus nulla ab dolorum suscipit itaque dolores debitis sequi.</p>
@@ -61,7 +68,7 @@
     </section>
 
     <!-- skills -->
-    <section class="skills resume-tab">
+    <section class="skills resume-tab" id="skills">
       <div class="container">
         <h2 class="section-title">Habilidades</h2>
         <u class="resume-bottom-list">
@@ -115,7 +122,7 @@
     </section>
       
     <!-- proyectos -->
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
       <h2>Proyectos</h2>
       <div class="contenedor">
         <div class="wrapper">
@@ -153,9 +160,17 @@
                 <h3>Portafolio</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="icons">
-                  <ion-icon name="logo-javascript"></ion-icon>
-                  <ion-icon name="logo-css3"></ion-icon>
-                  <ion-icon name="logo-html5"></ion-icon>
+                  <svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 1052 1052"><path fill="#f0db4f" d="M0 0h1052v1052H0z"/><path d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z" fill="#323330"/></svg>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path fill="#264de4" d="M71.357 460.819 30.272 0h451.456l-41.129 460.746L255.724 512z"/><path fill="#2965f1" d="m405.388 431.408 35.148-393.73H256v435.146z"/><path fill="#ebebeb" d="m124.46 208.59 5.065 56.517H256V208.59zm-5.041-57.875H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z"/><path fill="#fff" d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z"/></svg>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 452 520">
+                    <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                    <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                    <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"/>
+                    <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/>
+                  </svg>
+
                   <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M58.2 3.365a29.503 29.503 0 0 1-3.419 6.064A32.094 32.094 0 1 0 9.965 55.372l1.186 1.047a32.08 32.08 0 0 0 52.67-22.253c.875-8.17-1.524-18.51-5.62-30.8zM14.53 55.558a2.744 2.744 0 1 1-.404-3.857 2.744 2.744 0 0 1 .404 3.857zm43.538-9.61c-7.92 10.55-24.83 6.99-35.672 7.502 0 0-1.922.113-3.857.43 0 0 .73-.31 1.663-.663 7.614-2.65 11.213-3.16 15.838-5.54 8.708-4.427 17.322-14.122 19.112-24.2-3.313 9.695-13.373 18.032-22.53 21.418-6.276 2.313-17.614 4.566-17.614 4.566l-.457-.245c-7.714-3.75-7.952-20.457 6.077-25.845 6.143-2.366 12.02-1.067 18.654-2.65 7.084-1.683 15.28-6.99 18.615-13.916 3.73 11.08 8.224 28.422.166 39.15z" fill="#68bd45"/></svg>
                 </div>
               </div>
@@ -167,7 +182,7 @@
 
 
     <!-- contacto -->
-    <section class="contacto">
+    <!-- <section class="contacto">
       <div class="contenido">
         <h2>Contacto</h2>
         <div class="redes">
@@ -178,29 +193,39 @@
           <a href=""><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- footer -->
-    <div>
-      <footer class="bg-dark text-center text-white">
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(15, 15, 15, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+          <a href="https://sv.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+          <a href=""><i class="fa-solid fa-envelope fa-2xl"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#sobreMi">Sobre mi</a></li>
+            <li><a href="#Skills">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+          </ul>
+        </div>
       </div>
-      <!-- Copyright -->
+      <div class="footerBottom">
+        <p>Copyright &copy; 2025; Desarrollado por <span class="designer">Roberto Guevara</span></p>
+      </div>
     </footer>
-      
-    </div>
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/app/typed.js"></script>
+    <script src="/app/app.js"></script>
 </body>
 </html>
