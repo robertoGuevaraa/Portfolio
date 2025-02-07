@@ -1,0 +1,485 @@
+:root{
+    --base-color: rgb(211, 209, 209);
+    --text-color:black;
+    --accent-color: #778da9;
+    --text : "Montserrat", serif;
+}
+
+.dark_mode{
+    --base-color: #202020;
+    --text-color: #ebebeb;
+    --accent-color: rgb(119, 141, 169);
+}
+
+body{
+    background-color: var(--base-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--text);
+    transition: all 1.5s;
+    color: var(--text-color);
+}
+
+section {
+    padding-top: 100px; 
+    padding-bottom: 20px; 
+}
+
+#theme-switch{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg{
+    fill: #ebebeb;;
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.dark_mode #theme-switch svg:first-child{
+    display: none;
+}
+
+.dark_mode #theme-switch svg:last-child{
+    display: block;
+}
+
+ion-icon {
+    font-size: 32px;
+}
+
+#toggle{
+    display: none;
+}
+
+#label_toggle{
+    padding: 1px;
+    margin: auto;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.section-title{
+    font-size: 48px;
+}
+
+.subtitle{
+    padding-top: 40px;  
+}
+
+.svg-icon{
+    width: 24px;
+    height: 24px;
+}
+
+/*-------------------------------------------------- inicio----------------------------------------------------------- */
+
+.inicio{
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio .contenido h1{
+    color: var(--text-color);
+    margin-top: 40px;
+    font-size: 48px;
+}
+
+
+.typed{
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.inicio .contenido .redes a{
+    color: var(--text-color);
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 5px;
+}
+
+.inicio .contenido .redes a:hover{
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .inicio {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .inicio .contenido h1 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    .typed {
+        font-size: 24px;
+    }
+
+    .inicio .contenido .redes a {
+        width: 30px;
+        height: 35px;
+        line-height: 35px;
+        margin: 5px 3px;
+    }
+}
+
+/* --------------------------------------------------------sobre mi ------------------------------------------------- */
+
+.sobreMi{
+    text-align: left;
+}
+
+.sobreMi p{
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .sobreMi {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sobreMi p {
+        font-size: 16px;
+    }
+}
+
+/* --------------------------------------------------------habilidades--------------------------------------------------- */
+
+.resume-bottom-list{
+    text-decoration: none;
+    margin: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.resume-bottom-item{
+    list-style: none;
+    margin: 10px;
+    background: var(--base-color);
+    background: linear-gradient(180deg, rgba(211,209,209,1) 0%, rgba(119,141,169,1) 100%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 100vmax;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.label-medium{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.resume-bottom-item .icon{
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .habilidades{
+        text-align: center;
+    }
+    .resume-bottom-list {
+        margin: 1em;
+        grid-template-columns: 1fr;
+    }
+
+    .resume-bottom-item {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .label-medium {
+        font-size: 12px;
+    }
+
+    .resume-bottom-item .icon {
+        height: 16px;
+    }
+}
+
+/* ---------------------------------------------------------proyectos--------------------------------------------------------- */
+.wrapper{
+    padding: 50px 10%;
+}
+
+.card-area{
+    display: grid;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 50px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.cards{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.cards img{
+    height: 350px;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    overlay: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(transparent, rgb(119, 141, 169) 60%);
+    padding: 0 50px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.overlay h3{
+    margin-top: 55%;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.overlay a{
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #EBEBEB;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.cards:hover img{
+    transform: scale(1.1);
+}
+
+.cards:hover .overlay{
+    height: 100%;
+}
+
+.overlay .icon{
+    margin: 10px;
+}
+
+@media (max-width: 1204px) {
+
+    .proyectos{
+        text-align: center;
+    }
+
+    .card-area {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .overlay {
+        padding: 130px;
+    }
+
+    .overlay h3 {
+        margin-top: 20%;
+        font-size: 24px;
+    }
+
+    .overlay a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .cards:hover .overlay{
+        height: 0%;
+    }
+}
+
+/* ------------------------------------------------------footer--------------------------------------------------------------- */
+
+footer{
+    background-color: #2b2f34;
+}
+
+.footerContainer{
+    padding: 0px 20px 10px;
+}
+
+.socialIcons{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    color: #778da9;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 10px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none disc;
+}
+
+.footerNav ul li a{
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    color: #EBEBEB;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #202020;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: #EBEBEB;
+}
+
+.designer{
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none;
+}
+
+.icon{
+    color: #EBEBEB;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem{
+    list-style: none;
+}
+
+.menu-icon{
+    color: #EBEBEB;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu-icon:hover{
+    opacity: 1;
+}
+
+.text{
+    color: #EBEBEB;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .menu{
+        flex-direction: column;
+    }
+}
